@@ -11,7 +11,7 @@ const connection = () => {
   });
 
   const db = mongoose.connection;
-  console.log(process.env.MONGO_URL);
+  // console.log(process.env.MONGO_URL);
   db.on("disconnected", console.error.bind(console, "connection error:"));
   db.once("connected", function () {
     console.log("Mongoose is connected to the MongoDB server!");

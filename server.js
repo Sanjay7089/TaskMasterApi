@@ -8,7 +8,9 @@ import Routes from "./routes/routes.js";
 const app = express();
 
 const PORT = process.env.PORT || 8000;
-app.use(cors());
+app.use(
+  cors({ origin: "https://master--charming-cupcake-a081c7.netlify.app/" })
+);
 
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
