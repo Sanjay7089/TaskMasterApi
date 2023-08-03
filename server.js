@@ -13,7 +13,7 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "https://master--charming-cupcake-a081c7.netlify.app/",
+    origin: "https://master--charming-cupcake-a081c7.netlify.app",
     methods: "GET,POST,PATCH,DELETE",
   })
 );
