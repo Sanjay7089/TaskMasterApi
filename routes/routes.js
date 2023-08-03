@@ -8,7 +8,7 @@ import {
 } from "../controller/todo-controller.js";
 
 const route = express.Router();
-route.get("/", (req, res) => {
+route.get("/test", (req, res) => {
   res.send("Api home route ");
 });
 route.post("/todos", addTodo);
