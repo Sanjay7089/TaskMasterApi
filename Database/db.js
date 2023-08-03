@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 const connection = () => {
   //* connect mongoose to database
-  mongoose.set("strictQuery", true);
+  mongoose.set("strictQuery", false);
   mongoose
     .connect(process.env.MONGO_URL, {})
     .then(() => {
